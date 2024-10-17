@@ -1,0 +1,46 @@
+{
+  "sanpham": [
+    {
+      "id": 1,
+      "tensanpham": "San pham 1",
+      "giaban": 10000,
+      "soluongton": 20,
+      "giamgia": "aaa"
+    },
+    {
+      "id": 1,
+      "tensanpham": "San pham 1",
+      "giaban": 10000,
+      "soluongton": 20,
+      "giamgia": 10
+    },
+    {
+      "id": 1,
+      "tensanpham": "San pham 1",
+      "giaban": 10000,
+      "soluongton": 20,
+      "giamgia": 10
+    },
+    {
+      "id": 1,
+      "tensanpham": "San pham 1",
+      "giaban": 10000,
+      "soluongton": 20,
+      "giamgia": 10
+    },
+    {
+      "id": 1,
+      "tensanpham": "San pham 1",
+      "giaban": 10000,
+      "soluongton": 20,
+      "giamgia": 10
+    },
+    {
+      "id": "2",
+      "tensanpham": "2",
+      "giaban": "2",
+      "soluongton": "2",
+      "giamgia": "2"
+    }
+  ]
+}

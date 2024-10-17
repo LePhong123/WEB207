@@ -1,0 +1,55 @@
+<div class="container">
+  <form method="post">
+      <div class="form-group">
+            <label >Id</label>
+            <input type="text" class="form-control" id="id" placeholder="id" ng-model="id">
+            <label >Tên SP</label>
+            <input type="text" class="form-control" id="tensanpham" placeholder="tensanpham" ng-model="tensanpham">
+            
+            <label >Giá bán</label>
+            <input type="text" class="form-control" id="giaban"  placeholder="giaban" ng-model="giaban">
+
+            <label>Số lượng tồn</label>
+            <input type="text" class="form-control" id="soluongton" placeholder="soluongton" ng-model="soluongton">
+            <span>1233</span>
+            <label ng-model="giamgia">Giảm giá</label>
+            <input type="text" class="form-control"  >
+      </div>
+        
+        <br><button type="submit" class="btn btn-primary"
+             ng-click="onSubmit()">
+             Add New
+        </button>
+        <button type="submit" class="btn btn-primary"
+             ng-click="Update()">
+             UpdateNew
+        </button>
+        
+  </form>
+
+</div>
+
+<div>
+    <table class="table">
+      <tr>
+        <td>Id</td>       
+        <td>Tên sp</td>
+        <td>Giá bán</td>
+        <td>Số lượng tồn</td>
+        <td>Giảm giá</td>
+      </tr>
+      <tbody ng-repeat="sp in Lstsanpham">
+        <tr>
+          <td>{{sp.id}}</td>
+          <td>{{sp.tensanpham}}</td>
+          <td>{{sp.giaban}}</td>
+          <td>{{sp.soluongton}}</td>
+          <td>{{sp.giamgia}}</td>
+          <td>
+            <button ng-click="SP(sp.id)">Chi tiết</button>
+            <button ng-click="DeleteSP(sp.id)">Xóa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

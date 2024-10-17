@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+
+
+  <body ng-app="my-app">
+    <nav ng-include="'header.html'"></nav>
+    <div ng-view></div>
+    <nav ng-include="'footer.html'"></nav>
+
+    <script>
+      var app = angular.module("my-app", ["ngRoute"]);
+        app.config(function ($routeProvider, $locationProvider) {
+        $locationProvider.hashPrefix("");
+        $routeProvider
+        .when("/trang-chu", {
+        templateUrl: "trang-chu.html",
+        })
+        .when("/san-pham", {
+        templateUrl: "san-pham.html",
+        controller: SanphamController,
+        })
+        .when("/gioi-thieu", {
+        templateUrl: "gioi-thieu.html",
+        
+        })
+        .otherwise({
+        redirectTo: "trang-chu.html",
+        });
+    });
+    </script>
+    <script src="sanpham.js"></script>
+  </body>
+</html>

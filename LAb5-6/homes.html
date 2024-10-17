@@ -1,0 +1,81 @@
+<div class="container">
+  <h3 style="text-align: center">Home Page</h3>
+    <form method="post">
+        <div class="form-group">
+              <div class="row" style="padding-bottom: 30px;">
+               <label class="col-sm-2" >Id</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="id" placeholder="id" ng-model="id">
+                </div>
+              </div>
+              <div class="row" style="padding-bottom: 30px;">
+                <label class="col-sm-2">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" placeholder="name" ng-model="name">
+                </div>
+              </div>
+              
+              <div class="row" style="padding-bottom: 30px;">
+                <label class="col-sm-2">Price</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="price"  placeholder="price" ng-model="price">
+                </div>
+              </div>
+  
+              <div class="row" style="padding-bottom: 30px;">
+                <label class="col-sm-2" >COlor</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="color" placeholder="color" ng-model="color">
+                </div>
+              </div>
+              <div class="row" style="padding-bottom: 30px;">
+                <label class="col-sm-2">Type</label>
+                <div class="col-sm-10">
+                  <select name="cars" id="cars" ng-model="type" style="width: 100%">
+                    <option value="ALL">ALL</option>
+                    <option value="RED">RED</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Yellow">Yellow</option>
+                  </select>
+                </div>
+              </div>
+        </div>
+          
+          <br><button type="submit" class="btn btn-primary"
+               ng-click="onSubmit()">
+               Add New
+          </button>
+          <button type="submit" class="btn btn-primary"
+               ng-click="Update()">
+               UpdateNew
+          </button>
+          
+    </form>
+  
+  </div>
+  
+  <div class="container">
+      <table class="table">
+        <tr>
+          <td>Id</td>       
+          <td>Name</td>
+          <td>Price</td>
+          <td>COlor</td>
+          <td>Type</td>
+          <td>Chức năng</td>
+        </tr>
+        <tbody ng-repeat="xm in Lstxemay">
+          <tr>
+            <td>{{xm.id}}</td>
+            <td>{{xm.name}}</td>
+            <td>{{xm.price}}</td>
+            <td>{{xm.color}}</td>
+            <td>{{xm.type}}</td>
+            <td>
+              <button ng-click="SP(xm.id)">Chi tiết</button>
+              <button ng-click="delete(xm.id)">Xóa</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

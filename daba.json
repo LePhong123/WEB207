@@ -1,0 +1,57 @@
+{
+  "sanpham": [
+    {
+      "id": 1,
+      "tensanpham": "aaaa",
+      "giaban": "123",
+      "anh": "phong.jpg"
+    },
+    {
+      "id": 123,
+      "tensanpham": "aaaa",
+      "giaban": "1233",
+      "anh": "phong.jpg"
+    },
+    {
+      "id": 124
+    },
+    {
+      "id": 125
+    },
+    {
+      "id": "aa",
+      "tensanpham": "1"
+    },
+    {
+      "id": 126
+    },
+    {
+      "id": 127
+    },
+    {
+      "id": 128
+    },
+    {
+      "id": 129
+    },
+    {
+      "id": 130
+    },
+    {
+      "id": 131
+    },
+    {
+      "id": 132
+    },
+    {
+      "id": 133
+    },
+    {
+      "id": "a",
+      "tensanpham": "a"
+    },
+    {
+      "id": 134
+    }
+  ]
+}
